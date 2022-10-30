@@ -15,7 +15,6 @@ var (
 func ConectaComBancoDeDados() {
 
 	stringDeConexao := "host=localhost user=postgres password=root dbname=go-api-rest port=5432 sslmode=disable"
-	// stringDeConexao := "host=localhost user=root password=root dbname=root port=5433 sslmode=disable"
 	DB, err = gorm.Open(postgres.Open(stringDeConexao))
 
 	if err != nil {
