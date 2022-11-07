@@ -21,4 +21,6 @@ func ConectaComBancoDeDados() {
 		log.Panic("Erro ao conectar no banco de dados.")
 	}
 
+	log.Println("Banco de dados conectado...")
+
 }
